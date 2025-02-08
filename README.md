@@ -117,8 +117,8 @@ http://127.0.0.1:8000/
 
 ## ☁️ Deployment
 The API is deployed on **Render** and can be accessed at:  
-[Onion Production Forecast API](https://big-onion-production-forecast-fastapi-1.onrender.com)
-```
+[Onion Production Forecast API](https://big-onion-production-forecast-fastapi-1.onrender.com
+)
 
 ### 🔹 Deployment Steps:
 1. Push your code to a **GitHub repository**.
@@ -142,10 +142,20 @@ curl -X POST "https://onion-production-forecast-api.onrender.com/predict_onion_p
   "Relative_Humidity_D": 70.0,
   "Relative_Humidity_N": 80.0,
   "Rainfall": 150.0,
-  "Area": "Ampara",
+  "Area": "Colombo",
   "Season": "Yala"
 }'
 ```
+
+### 🔹 Example Response
+```json
+{
+  "area": "Colombo",
+  "predicted_onion_production": "1,234.56 metric tons"
+}
+```
+
+---
 
 ### 🔹 Example Response
 ```json
